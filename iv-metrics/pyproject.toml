@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iv-metrics"
+version = "0.1.0"
+description = "Compute IV Rank and IV Percentile from implied volatility series"
+requires-python = ">=3.9"
+authors = [{name="Your Name"}]
+readme = "README.md"
+license = {text = "MIT"}
+keywords = ["implied volatility", "iv rank", "iv percentile", "options"]
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = ["pandas>=2.0.0", "numpy>=1.24.0"]
+
+[project.scripts]
+iv-metrics = "iv_metrics.cli:main"
